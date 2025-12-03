@@ -117,3 +117,14 @@ Add/remove columns or rename them as needed.
 Filtering & cleaning:
 Confidence thresholds and text cleaning (e.g., removing row numbers from
 "Supplier Name") can be adjusted inside extract_data_from_image_by_coordinates.
+
+
+
+## Disclaimer
+
+This repository is intended as a template for building your own ETL
+pipeline between Snowflake and Dropbox.
+
+Always make sure:
+- Your use of data complies with your data provider’s terms and conditions.
+- You keep all credentials in a secure place and never commit them to git.
