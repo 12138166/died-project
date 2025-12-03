@@ -1,3 +1,4 @@
+# ocr-table-to-csv
 import os
 import cv2
 import pytesseract
@@ -10,8 +11,14 @@ from collections import defaultdict
 _ = cv2.getVersionString()
 
 
-# ===================================================================
+import argparse
 
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--input_folder", required=True)
+    parser.add_argument("--output_folder", required=True)
+    return parser.parse_args()
+    
 def preprocess_image(image_path):
     """
     Loads image, converts to grayscale, and inverts colors to improve OCR.
@@ -136,8 +143,11 @@ def extract_data_from_image_by_coordinates(image_path, column_names):
 
 # path!!!!
 def main():
-    input_folder = ''
-    output_folder = ''
+    # input_folder = ''
+    # output_folder = ''
+    args = parse_args()
+    input_folder = args.input_folder
+    output_folder = args.output_folder
 
     if not os.path.exists(output_folder): os.makedirs(output_folder)
 
