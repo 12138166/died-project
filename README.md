@@ -1,4 +1,4 @@
-# Table OCR Column Extractor  -died-project
+# Table OCR Column Extractor  -died-project （for Bloomberg 
 
 This repository contains a small utility script for extracting **structured tables**
 from images using Tesseract OCR and a simple geometric heuristic.
