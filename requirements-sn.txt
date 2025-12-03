@@ -1,0 +1,8 @@
+# for snowflake
+pandas
+sqlalchemy
+tqdm
+dropbox
+pyarrow
+snowflake-connector-python
+snowflake-sqlalchemy
